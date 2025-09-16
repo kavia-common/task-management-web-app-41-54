@@ -2,6 +2,23 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+## Figma Asset Extraction
+
+A utility script is available to extract/download icon and image assets from the provided Figma screen JSON.
+
+Run from project root:
+
+```
+npm --prefix task-management-web-app-41-54/todo_frontend run extract:figma
+```
+
+This will:
+- Parse `attachments/screen_371:365.json`
+- Save assets into `assets/figmaimages/`
+- Generate a manifest file `assets/figmaimages/figma_assets_manifest.json`
+
+For advanced usage and optional Figma API support, see `task-management-web-app-41-54/todo_frontend/scripts/README.md`.
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React

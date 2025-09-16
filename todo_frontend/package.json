@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "extract:figma": "python ./scripts/extract_figma_assets.py --input-json ../../attachments/screen_371:365.json --assets-dir ../../assets/figmaimages"
   },
   "eslintConfig": {
     "extends": "react-app"
