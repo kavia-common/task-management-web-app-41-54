@@ -6,16 +6,24 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 A utility script is available to extract/download icon and image assets from the provided Figma screen JSON.
 
-Run from project root:
+Run from project root (Python version):
 
 ```
 npm --prefix task-management-web-app-41-54/todo_frontend run extract:figma
 ```
 
-This will:
+Or run the Node.js version:
+
+```
+npm --prefix task-management-web-app-41-54/todo_frontend run extract:figma:node
+```
+
+Both will:
 - Parse `attachments/screen_371:365.json`
 - Save assets into `assets/figmaimages/`
 - Generate a manifest file `assets/figmaimages/figma_assets_manifest.json`
+
+To use Figma API for real SVGs, set environment variables FIGMA_TOKEN and FIGMA_FILE_KEY before running the Node/Python scripts.
 
 For advanced usage and optional Figma API support, see `task-management-web-app-41-54/todo_frontend/scripts/README.md`.
 

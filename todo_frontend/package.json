@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "extract:figma": "python ./scripts/extract_figma_assets.py --input-json ../../attachments/screen_371:365.json --assets-dir ../../assets/figmaimages"
+    "extract:figma": "python ./scripts/extract_figma_assets.py --input-json ../../attachments/screen_371:365.json --assets-dir ../../assets/figmaimages",
+    "extract:figma:node": "node ./scripts/extract_figma_assets.js ../../attachments/screen_371:365.json --out ../../assets/figmaimages"
   },
   "eslintConfig": {
     "extends": "react-app"
